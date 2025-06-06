@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "id": 1,
+    "nome": "Laptop Lenovo ThinkPad",
+    "descrizione": "Laptop aziendale affidabile con Intel i5, 8GB RAM, SSD 256GB.",
+    "prezzo": 799.99,
+    "quantitaDisponibile": 10
+  },
+  {
+    "id": 2,
+    "nome": "Mouse Logitech MX Master 3",
+    "descrizione": "Mouse ergonomico con controllo avanzato e batteria ricaricabile.",
+    "prezzo": 89.99,
+    "quantitaDisponibile": 25
+  },
+  {
+    "id": 3,
+    "nome": "Monitor Samsung 27\" 4K",
+    "descrizione": "Monitor UHD con risoluzione 3840x2160 e tecnologia IPS.",
+    "prezzo": 299.99,
+    "quantitaDisponibile": 5
+  },
+  {
+    "id": 4,
+    "nome": "Tastiera Meccanica Keychron K6",
+    "descrizione": "Tastiera meccanica compatta wireless con switch Gateron.",
+    "prezzo": 109.5,
+    "quantitaDisponibile": 15
+  },
+  {
+    "id": 5,
+    "nome": "Cuffie Sony WH-1000XM5",
+    "descrizione": "Cuffie con cancellazione attiva del rumore e lunga autonomia.",
+    "prezzo": 349.0,
+    "quantitaDisponibile": 7
+  }
+]
