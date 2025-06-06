@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "Mario",
+    "cognome": "Rossi",
+    "email": "mario.rossi@example.com",
+    "password": "password123",
+    "dataNascita": "1990-01-10",
+    "ruolo": "admin"
+  },
+  {
+    "id": 2,
+    "nome": "Luca",
+    "cognome": "Bianchi",
+    "email": "luca.bianchi@example.com",
+    "password": "mypassword",
+    "dataNascita": "1995-03-22",
+    "ruolo": "user"
+  }
+]

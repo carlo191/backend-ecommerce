@@ -1,12 +1,12 @@
-const express = require('express');
-const fs = require('fs');
+const express = require("express");
+const fs = require("fs");
 const router = express.Router();
 
-const USERS_FILE = './data/users.json';
+const USERS_FILE = "./data/users.json";
 
 // Legge utenti dal file
 function readUsers() {
-  return JSON.parse(fs.readFileSync(USERS_FILE, 'utf-8'));
+  return JSON.parse(fs.readFileSync(USERS_FILE, "utf-8"));
 }
 
 // Scrive utenti nel file
@@ -15,41 +15,43 @@ function writeUsers(users) {
 }
 
 // POST /api/auth/register
-router.post('/register', (req, res) => {
+router.post("/register", (req, res) => {
   const { nome, cognome, email, password, dataNascita } = req.body;
   const users = readUsers();
 
-  if (users.find(u => u.email === email)) {
-    return res.status(400).json({ message: 'Email già registrata' });
+  if (users.find((u) => u.email === email)) {
+    return res.status(400).json({ message: "Email già registrata" });
   }
 
   const newUser = {
-    id: Date.now(),
+    id: Math.floor(Math.random() * 1000000) + 1,
     nome,
     cognome,
     email,
-    password, // IN CHIARO (solo per imparare!)
+    password,
     dataNascita,
-    ruolo: 'user'
+    ruolo: "user",
   };
 
   users.push(newUser);
   writeUsers(users);
 
-  res.status(201).json({ message: 'Utente registrato con successo', user: newUser });
+  res
+    .status(201)
+    .json({ message: "Utente registrato con successo", user: newUser });
 });
 
 // POST /api/auth/login
-router.post('/login', (req, res) => {
+router.post("/login", (req, res) => {
   const { email, password } = req.body;
   const users = readUsers();
 
-  const user = users.find(u => u.email === email && u.password === password);
+  const user = users.find((u) => u.email === email && u.password === password);
   if (!user) {
-    return res.status(401).json({ message: 'Credenziali non valide' });
+    return res.status(401).json({ message: "Credenziali non valide" });
   }
 
-  res.json({ message: 'Login riuscito', user });
+  res.json({ message: "Login riuscito", user });
 });
 
 module.exports = router;
