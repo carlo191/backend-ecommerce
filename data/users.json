@@ -16,5 +16,41 @@
     "password": "mypassword",
     "dataNascita": "1995-03-22",
     "ruolo": "user"
+  },
+  {
+    "id": 3,
+    "nome": "Luca",
+    "cognome": "Bianchi",
+    "email": "admin",
+    "password": "admin",
+    "dataNascita": "1995-03-22",
+    "ruolo": "admin"
+  },
+  {
+    "id": 4,
+    "nome": "Luca",
+    "cognome": "Bianchi",
+    "email": "user",
+    "password": "user",
+    "dataNascita": "1995-03-22",
+    "ruolo": "user"
+  },
+  {
+    "id": 256655,
+    "nome": "ciao",
+    "cognome": "ciao",
+    "email": "ciao",
+    "password": "ciao",
+    "dataNascita": "1990-01-01",
+    "ruolo": "user"
+  },
+  {
+    "id": 311586,
+    "nome": "prova",
+    "cognome": "prova",
+    "email": "prova@prova.it",
+    "password": "prova",
+    "dataNascita": "1991-03-20",
+    "ruolo": "user"
   }
 ]

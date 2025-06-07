@@ -31,7 +31,16 @@
     "id": 5,
     "nome": "Cuffie Sony WH-1000XM5",
     "descrizione": "Cuffie con cancellazione attiva del rumore e lunga autonomia.",
-    "prezzo": 349.0,
+    "prezzo": 349,
     "quantitaDisponibile": 7
+  },
+  {
+    "id": 1749299954620,
+    "nome": "asus 2",
+    "produttore": "asus",
+    "foto": "",
+    "prezzo": 30,
+    "descrizione": "",
+    "categoria": "pc"
   }
 ]
