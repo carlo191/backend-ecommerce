@@ -42,5 +42,14 @@
     "prezzo": 30,
     "descrizione": "",
     "categoria": "pc"
+  },
+  {
+    "id": 1749304285833,
+    "nome": "prova",
+    "produttore": "prova",
+    "foto": "",
+    "prezzo": 33392,
+    "descrizione": "",
+    "categoria": "prova"
   }
 ]

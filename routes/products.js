@@ -40,7 +40,7 @@ router.post('/', (req, res) => {
   const products = readProducts();
 
   const nuovoProdotto = {
-    id: Date.now(),
+    id: Math.floor(Math.random() * 1000000), 
     nome,
     produttore,
     foto,
